@@ -1,0 +1,24 @@
+{
+  "name": "qa-automation-framework",
+  "version": "1.0.0",
+  "description": "Enterprise QA automation framework with AI/ML integration",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:parallel": "playwright test --workers=4",
+    "report": "playwright show-report",
+    "docker:build": "docker build -t qa-framework .",
+    "docker:run": "docker run -it qa-framework"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "typescript": "^5.0.0",
+    "allure-playwright": "^2.15.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "faker": "^6.6.6"
+  }
+}
